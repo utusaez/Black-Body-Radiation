@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import functions as fun
-import warnings
 
 
 
