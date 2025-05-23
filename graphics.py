@@ -47,8 +47,8 @@ def plot_by_temperature(T):
     fig, ax = plt.subplots(figsize=(12, 8))
     ax.plot(fun.planck_law(T)[0], fun.planck_law(T)[1] , color = "#005f99", label = f"Temperature: {T} (K)")
     ax.axvline(fun.wien_law(T), ls = "--", color = "#005f99", label = f"Max wavelenght: {fun.wien_law(T):.3e} (nm)")
-    ax.plot([], [], ' ', label=f"Energy: {fun.energy(T):.4e} (erg cm^−2 s^−1)")
-    ax.plot([], [], ' ', label=f"Type star: {type_star}")
+    ax.plot([], [], ' ', label = rf"Energy: {fun.energy(T):.4e} (erg cm$^{-2}$ s$^{-1})$")
+    ax.plot([], [], ' ', label = f"Type star: {type_star}")
 
     ax.set_xlabel(r"$\mathrm{Wavelength} \ (\mathrm{nm})$")
     ax.set_ylabel(r"$F_\lambda \ (\mathrm{erg\,s^{-1}\,cm^{-2}\,cm^{-1}})$")
